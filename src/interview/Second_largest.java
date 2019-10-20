@@ -2,7 +2,7 @@ package interview;
 
 import java.util.Scanner;
 
-public class Seconf_largest {
+public class Second_largest {
 
 	public static void main(String[] args) {
 		  int arr[] = {12,35, 1, 10, 34, 1,36,63}; 
