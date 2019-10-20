@@ -5,10 +5,13 @@ public class Rotation_Array {
 	public static void main(String[] args) {
 	
 		int[] a= {1,2,3,4,5};
-		int[] b= {1,2,3,4,5};
-		rotate(a,1);
+		int[] b= {1,2,3,4,5,6,7,8,9,0};
+		//rotate(a,1);
+		int right=2;  //right rotation
+		int left=b.length-right; 
+		anil(b,right);
 		
-		anil(b,1);
+		
 	
 	}
 
@@ -41,12 +44,12 @@ public class Rotation_Array {
 		
 		for(int i=0;i<k;i++)
 		{
-			System.out.print(a[n-(k-i)]);
+			System.out.print(a[n+i-k]+" ");
 		}
 		
 		for(int j=0;j<(n-k);j++)
 		{
-			System.out.print(a[j]);
+			System.out.print(a[j]+" ");
 		}
 	}
 }
