@@ -1,3 +1,4 @@
+
 package sting;
 
 public class First_Repeated_Character {

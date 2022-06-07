@@ -5,7 +5,7 @@ public class String_Swap {
 	public static void main(String[] args) {
 		
 		String a="sajju";
-		String b="shreestha";
+		String b="shrestha";
 		
 		int n=a.length();
 		int m=b.length();

@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Map;
 import java.util.Map.Entry;
 import java.util.TreeMap;
 
@@ -11,7 +12,7 @@ public class TreeMapExample {
 
 	public static void main(String[] args) {
 
-
+		//sorting by values
 		TreeMap<String,Integer> t=new TreeMap<String,Integer>();
         t.put("c", 102);
         t.put("b", 101);
@@ -21,7 +22,7 @@ public class TreeMapExample {
         System.out.println(t);
         
         List<Entry<String,Integer>> l=new ArrayList<Entry<String,Integer>>(t.entrySet());
-        
+   
         Collections.sort(l, new Comp());
         System.out.println("With Sorting by values");
         System.out.println(l);

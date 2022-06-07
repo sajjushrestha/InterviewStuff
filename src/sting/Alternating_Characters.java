@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Alternating_Characters {
 	
 	public static void main(String[] args) throws IOException {
-		String a="ABABA";
+		String a="AAABA";
 		String b=""; 
 		int count=0; 
 		int n=a.length();

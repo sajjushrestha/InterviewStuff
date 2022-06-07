@@ -1,4 +1,4 @@
-package java;
+package xjava;
 
 public class Third_highest {
 
