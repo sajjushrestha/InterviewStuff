@@ -8,7 +8,7 @@ public class Anagrams {
 	
 	
 	static boolean isAnagram(String a, String b) {
-        System.out.println(a.length()!=b.length() ? "Not Anagrams":"" );
+        System.out.println(a.replaceAll("[^a-z]","").length()!=b.replaceAll("[^a-z]","").length() ? "Not Anagrams":"" );
 
     char[] c=a.toLowerCase().replaceAll("[^a-z]", "").toCharArray();
     char[] d=b.toLowerCase().replaceAll("[^a-z]", "").toCharArray();

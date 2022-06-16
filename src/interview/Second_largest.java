@@ -1,5 +1,6 @@
 package interview;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Second_largest {
@@ -8,6 +9,9 @@ public class Second_largest {
 		  int arr[] = {12,35, 1, 10, 34, 1,36,63}; 
           int n = arr.length; 
           print2largest(arr, n);
+          
+          Arrays.sort(arr);
+          System.out.println(arr[n-2]);
 	}
 	
 	
@@ -50,8 +54,7 @@ second then update second  */
 		System.out.println("The First largest element"+ 
 	             " is "+ first); 
 		
-		System.out.println("The Samllest element"+ 
-	             " is "+ first); 
+		//System.out.println("The Samllest element"+ " is "+ first); 
 	} 
 	
 	

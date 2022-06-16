@@ -7,13 +7,14 @@ public class Remove_duplicate_in_array {
 
 	public static void main(String[] args) {
 		
-		removeUsingLinkedHashSet();
+	//	removeUsingLinkedHashSet();
 		int[] a= {7,3,2,1,7,6,0,3,3,2,3,4,5,6,0,-1};
 		//int a[] = {1, 2, 2, 3, 4, 4, 4, 5, 5}; 
 		Arrays.sort(a);
 		int n=a.length;
 		
 	   n=removeDuplicates(a,n);
+
 		 // Print updated array 
         for (int i=0; i<n; i++) 
            System.out.print(a[i]+" "); 

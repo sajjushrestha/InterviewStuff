@@ -1,5 +1,7 @@
 package pack;
 
+import java.util.Stack;
+
 public class Reverse_string_preserving_position_of_spaces {
 	static void reverseString(String inputString)
     {
@@ -53,10 +55,50 @@ public class Reverse_string_preserving_position_of_spaces {
      
     public static void main(String[] args)
     {
-        reverseString("I Am Not String");
+        reverseString("I Am Not String"); 
+        System.out.println(reverse("I Am Not String"));
          
         reverseString("JAVA JSP ANDROID");
+        System.out.println(reverse("JAVA JSP ANDROID"));
          
         reverseString("1 22 333 4444 55555");
+        System.out.println(reverse("1 22 333 4444 55555"));
     }
+    
+    public static String reverse(String s)
+	{
+		
+		Stack<Character> st=new Stack<>();
+		
+		for(char ch:s.toCharArray())
+		{
+			if(!Character.isWhitespace(ch))
+			{
+				st.add(ch);
+			}
+			
+		}
+		
+		//System.out.println(st);
+		StringBuffer sb=new StringBuffer();
+		
+		for(char ch:s.toCharArray())
+		{
+			if(!Character.isWhitespace(ch))
+			{
+				sb.append(st.pop());
+			}
+			else
+			{
+				sb.append(ch);
+			}
+			
+		}
+		
+		return sb.toString();
+	}
+   
+   
+    
+   
 }

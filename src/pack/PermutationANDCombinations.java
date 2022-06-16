@@ -7,11 +7,35 @@ public class PermutationANDCombinations {
 
 	    public static void main(String[] args)
 	    {
-	        System.out.println(getPermutations("SAJJU"));
+	        System.out.println(getPermutations("ABCDE"));
+	        System.out.println(permuations("ABCDE",""));
 	 
 	        //Prints
 	        //[ACB, BCA, ABC, CBA, BAC, CAB]
 	    }
+	    
+		public static String permuations(String s,String ans)
+		{
+			
+			
+			
+			if(s.length()==0)
+				System.out.print(ans+" ");
+
+			for(int i=0;i<s.length();i++)
+			{
+				char ch=s.charAt(i);
+				String left=s.substring(0,i);
+				String right=s.substring(i+1);
+				String rest=left+right;
+				permuations(rest,ans+ch);
+			
+			}
+			
+			
+			return ans;
+			
+		}
 	 
 	    public static Set<String> getPermutations(String string)
 	    {

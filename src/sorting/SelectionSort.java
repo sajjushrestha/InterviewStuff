@@ -10,6 +10,9 @@ public class SelectionSort {
 		 * System.out.println((a[i])); }
 		 */
 		
+		int a[]= {1,4,-3,14,2,8,0}; selection(a); for(int i=0;i<a.length;i++) {
+			  System.out.println((a[i])); }
+		
 		int size, i, j, temp;  
 	       int arr[] = new int[50];  
 	       Scanner scan = new Scanner(System.in);  

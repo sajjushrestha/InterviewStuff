@@ -24,14 +24,15 @@ System.out.println(rev);
 }
 	
 //@Test
-public void recurssion()
+public static void main(String[] args)
 {
 	System.out.println(reverseRecursion("Sajju"));
+	System.out.println(reverseRecursion2("Sajju"));
 }
 
 
 
-public String reverseRecursion(String s)
+public static String reverseRecursion(String s)
 {
 
 	if(s.length()==1)
@@ -44,6 +45,19 @@ public String reverseRecursion(String s)
 	}
 	
 }
-		
+	
+public static String reverseRecursion2(String s)
+{
+
+	if(s.length()==1)
+	{
+		return s;
+	}
+	else
+	{
+		return reverseRecursion2(s.substring(1))+s.charAt(0);
+	}
+	
+}
 
 }

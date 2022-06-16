@@ -35,7 +35,7 @@ public class Array_Duplicates {
 		Set<Integer> s=new HashSet<Integer>();
 		for(Integer i:a)
 		{
-			if(s.add(i)==false)
+			if(s.add(i))
 				{
 				System.out.println(i);
 			}

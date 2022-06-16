@@ -14,6 +14,8 @@ import java.util.TreeMap;
 public class TestClass {
 	
 	public static void main(String args[]) {
+		
+		System.out.println(rev("sajju"));
 	int[] a= {1,1,3,5,1,3,2,3,6};
 	Arrays.sort(a);
 	int n=a.length;
@@ -101,6 +103,17 @@ Comparator<Entry<String, Integer>> comp=new Comparator<Entry<String, Integer>>()
 		Integer[] num=l.toArray(new Integer[] {});
 		
 		System.out.println(Arrays.toString(num));
+	}
+	
+	public static String rev(String s)
+	{
+		if(s==null || s.length() ==0)
+			return s;
+		
+	
+		
+		return rev(s.substring(1))+s.charAt(0);
+		
 	}
 	
 	
