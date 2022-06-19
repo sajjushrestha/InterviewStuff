@@ -6,5 +6,10 @@ public interface I1_interface {
 		void printSomething();
 	 
 		void printAnything();
+		
+		default void met()
+		{
+			System.out.println("im inside interface");
+		}
 
 }

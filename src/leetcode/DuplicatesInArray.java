@@ -10,20 +10,12 @@ public class DuplicatesInArray {
 		
 		int a[]= {1,2,2,3,1,4,5};
 		Arrays.sort(a);
-		int n[]=new int[a.length];
-		int j=0;
+		int n=a.length;
+		n=dupl(a,n);
 		
-		for(int i=0;i<a.length-1;i++)
-		{
-			if(a[i]!=a[i+1])
-			{
-				a[j++]=a[i];
-			}
-			
-			a[j++]=a[a.length-1];
-		}
 		
-		  for (int i=0; i<a.length; i++) 
+		
+		  for (int i=0; i<n; i++) 
 	           System.out.print(a[i]+" "); 
 		
 		/*
@@ -39,6 +31,26 @@ public class DuplicatesInArray {
 		 */
 		
 		
+	}
+	
+	public static int dupl(int a[],int n)
+	{
+		  if (n == 0 || n == 1) 
+	            return n; 
+		  
+		int j=0;
+		for(int i=0;i<n-1;i++)
+		{
+			if(a[i]!=a[i+1])
+			{
+				a[j++]=a[i];
+			}
+						
+		}
+		
+		a[j++]=a[n-1];
+		
+		return j;
 	}
 
 }

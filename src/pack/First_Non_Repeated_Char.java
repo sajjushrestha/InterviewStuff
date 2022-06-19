@@ -7,10 +7,18 @@ import java.util.Map.Entry;
 
 
 public class First_Non_Repeated_Char {
-	String s="analogy";
+	static String s="analogy";
+	
+	public static void main(String[] args) {
+		
+		nonRepeat_map();
+		nonRepeat();
+	        System.out.println();
+
+	}
 	
 	//@Test
-	public void nonRepeat_map()
+	public static void nonRepeat_map()
 	{
 		//String s="easiest";
 		char[] ch=s.toCharArray();
@@ -42,8 +50,8 @@ public class First_Non_Repeated_Char {
 	}
 	
 
-	//@Test
-	public void nonRepeat()
+	
+	public static void nonRepeat()
 	{
 		
 		char[] ch=s.toCharArray();
